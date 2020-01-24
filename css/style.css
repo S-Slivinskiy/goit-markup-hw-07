@@ -1,0 +1,140 @@
+:root {
+  --light-text: #ffffff;
+  --dark-text: #333333;
+  --grey-text: #666666;
+  --red-color: #ff5355;
+  --green-color: #1cd7ad;
+  --yellow-color: #ffa507;
+  --blue-color: #4e73db;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-baner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-text);
+  background-image: url(../images/mobile-baner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-nav {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  margin-top: 20px;
+}
+.logo {
+  text-decoration: none;
+  color: var(--light-text);
+  font-size: 20px;
+  margin-top: 120px;
+}
+.user-enter {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+.user-enter li {
+  list-style: none;
+}
+.user-enter-link {
+  margin-top: 65px;
+  width: 50%;
+  text-decoration: none;
+  padding: 5px 20px 5px 20px;
+  font-size: 14px;
+  color: var(--light-text);
+  border: 2px solid var(--light-text);
+  border-radius: 20px;
+  border-color: transparent;
+}
+.user-enter-link:hover,
+.user-enter-link:hover {
+  border-color: initial;
+}
+.top-head {
+  margin: 0;
+  margin-top: 40px;
+  color: var(--light-text);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.baner-text {
+  margin: 0;
+  margin-top: 20px;
+  width: 220px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--light-text);
+}
+.button {
+  all: unset;
+  color: var(--light-text);
+  font-size: 14px;
+  background-color: var(--red-color);
+  margin-top: 20px;
+  margin-bottom: 165px;
+  padding: 10px 50px 10px 50px;
+  border: 2px solid var(--red-color);
+  border-radius: 25px;
+}
+.button:hover,
+.button:focus {
+  color: var(--red-color);
+  background-color: transparent;
+}
+.meet-partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meet-head {
+  margin: 0;
+  padding-top: 70px;
+  margin-bottom: 20px;
+  width: 260px;
+  text-align: center;
+  color: var(--dark-text);
+}
+.partnet-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.partner {
+  margin-bottom: 20px;
+}
+.partner-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  text-decoration: none;
+  text-align: center;
+}
+.partner-photo {
+  margin-bottom: 20px;
+}
+.partner-name {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--dark-text);
+}
+.partner-about {
+  margin: 0;
+  font-size: 14px;
+  font-weight: light;
+  color: var(--grey-text);
+}
