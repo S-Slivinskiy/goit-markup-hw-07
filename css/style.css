@@ -156,6 +156,31 @@
   text-decoration: none;
   text-align: center;
 }
+.partner-link:hover .one,
+.partner-link:focus .one {
+    background-image: url(../images/icons/icon-tv-hover.svg);
+    background-color: var(--light-text);
+    border: 3px solid var(--red-color);
+  }
+.partner-link:hover .two,
+.partner-link:focus .two {
+    background-image: url(../images/icons/icon-cup-hover.svg);
+    background-color: var(--light-text);
+    border: 3px solid var(--green-color);
+  }
+.partner-link:hover .three,
+.partner-link:focus .three {
+    background-image: url(../images/icons/icon-flask-hover.svg);
+    background-color: var(--light-text);
+    border: 3px solid var(--yellow-color);
+  }
+.partner-link:hover .four,
+.partner-link:focus .four {
+    background-image: url(../images/icons/icon-plane-hover.svg);
+    background-color: var(--light-text);
+    border: 3px solid var(--blue-color);
+  }
+}
 .partner-photo {
   display: block;
   margin-bottom: 20px;
