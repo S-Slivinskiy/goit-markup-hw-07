@@ -6,10 +6,12 @@
   --green-color: #1cd7ad;
   --yellow-color: #ffa507;
   --blue-color: #4e73db;
+  --bold-font: "Montserrat", sans-serif;
+  --light-font: "Roboto", sans-serif;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -25,19 +27,19 @@
 }
 .top-nav {
   display: inline-flex;
-  flex-direction: column-reverse;
   margin-top: 20px;
 }
 .logo {
   text-decoration: none;
   color: var(--light-text);
   font-size: 20px;
-  margin-top: 120px;
+  font-family: var(--bold-font);
 }
 .user-enter {
   margin: 0;
   padding: 0;
   display: inline-flex;
+  font-family: var(--bold-font);
 }
 .user-enter li {
   list-style: none;
@@ -57,6 +59,33 @@
 .user-enter-link:hover {
   border-color: initial;
 }
+.icon {
+}
+@media screen and (max-width: 750px) {
+  .top-nav {
+    flex-direction: column-reverse;
+  }
+  .logo {
+    margin-top: 120px;
+  }
+  .baner-text {
+    width: 218px;
+  }
+  .partnet-list {
+    flex-direction: column;
+  }
+  .meet-head {
+    width: 268px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .partnet-list {
+    width: 495px;
+  }
+  .partner:nth-child(2n) {
+    margin-right: 0;
+  }
+}
 .top-head {
   margin: 0;
   margin-top: 40px;
@@ -64,19 +93,21 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
+  font-family: "Montserrat", sans-serif;
 }
 .baner-text {
   margin: 0;
   margin-top: 20px;
-  width: 220px;
   text-align: center;
   font-size: 18px;
+  font-family: var(--light-font);
   color: var(--light-text);
 }
 .button {
   all: unset;
   color: var(--light-text);
   font-size: 14px;
+  font-family: var(--bold-font);
   background-color: var(--red-color);
   margin-top: 20px;
   margin-bottom: 165px;
@@ -99,42 +130,123 @@
   margin: 0;
   padding-top: 70px;
   margin-bottom: 20px;
-  width: 260px;
   text-align: center;
   color: var(--dark-text);
+  font-size: 22px;
+  font-family: var(--bold-font);
 }
 .partnet-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .partner {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .partner-link {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 5px;
   width: 220px;
+  height: 240px;
   text-decoration: none;
   text-align: center;
 }
 .partner-photo {
+  display: block;
   margin-bottom: 20px;
+}
+.card-photo {
+  position: relative;
+  overflow: hidden;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-bottom: 20px;
+  border: 3px solid var(--light-text);
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  bottom: 0;
+  right: 0;
+}
+.one {
+  background-image: url(../images/icons/icon-tv.svg);
+  background-color: var(--red-color);
+}
+.two {
+  background-image: url(../images/icons/icon-cup.svg);
+  background-color: var(--green-color);
+}
+.three {
+  background-image: url(../images/icons/icon-flask.svg);
+  background-color: var(--yellow-color);
+}
+.four {
+  background-image: url(../images/icons/icon-plane.svg);
+  background-color: var(--blue-color);
 }
 .partner-name {
   margin: 0;
   margin-bottom: 20px;
   font-size: 14px;
-  font-weight: bold;
+  font-family: var(--bold-font);
   color: var(--dark-text);
 }
 .partner-about {
   margin: 0;
   font-size: 14px;
-  font-weight: light;
+  font-family: var(--light-font);
   color: var(--grey-text);
+}
+.meet-partner button {
+  margin-bottom: 55px;
+}
+@media screen and (min-width: 750px) {
+  .top-baner {
+    background-image: url(../images/tablet-baner.jpg);
+  }
+  .top-nav {
+    width: 660px;
+    justify-content: space-between;
+  }
+  .top-head {
+    margin-top: 160px;
+    font-size: 50px;
+  }
+  .baner-text {
+    margin-top: 45px;
+    font-size: 25px;
+  }
+  .button {
+    margin-top: 40px;
+    margin-bottom: 235px;
+  }
+  .partnet-list {
+    flex-wrap: wrap;
+  }
+  .partner {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .top-baner {
+    background-image: url(../images/desktop-baner.jpg);
+  }
+  .top-nav {
+    width: 940px;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .partner {
+    margin-right: 5px;
+  }
 }
