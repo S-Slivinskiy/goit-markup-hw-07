@@ -118,7 +118,7 @@
 .button:hover,
 .button:focus {
   color: var(--red-color);
-  background-color: rgba(255, 255, 255, 0.350);
+  background-color: rgba(255, 255, 255, 0.35);
 }
 .meet-partner {
   display: flex;
@@ -156,66 +156,24 @@
   text-decoration: none;
   text-align: center;
 }
-.partner-link:hover .one,
-.partner-link:focus .one {
-    background-image: url(../images/icons/icon-tv-hover.svg);
-    background-color: var(--light-text);
-    border: 3px solid var(--red-color);
-  }
-.partner-link:hover .two,
-.partner-link:focus .two {
-    background-image: url(../images/icons/icon-cup-hover.svg);
-    background-color: var(--light-text);
-    border: 3px solid var(--green-color);
-  }
-.partner-link:hover .three,
-.partner-link:focus .three {
-    background-image: url(../images/icons/icon-flask-hover.svg);
-    background-color: var(--light-text);
-    border: 3px solid var(--yellow-color);
-  }
-.partner-link:hover .four,
-.partner-link:focus .four {
-    background-image: url(../images/icons/icon-plane-hover.svg);
-    background-color: var(--light-text);
-    border: 3px solid var(--blue-color);
-  }
-}
+
 .partner-photo {
   display: block;
-  margin-bottom: 20px;
 }
 .card-photo {
   position: relative;
   overflow: hidden;
+  position: relative;
 }
 .icon {
-  width: 30px;
-  height: 30px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  border: 3px solid #fff;
   position: absolute;
-  border: 3px solid var(--light-text);
-  border-radius: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;
+  background-color: var(--green-color);
   bottom: 0;
   right: 0;
-}
-.one {
-  background-image: url(../images/icons/icon-tv.svg);
-  background-color: var(--red-color);
-}
-.two {
-  background-image: url(../images/icons/icon-cup.svg);
-  background-color: var(--green-color);
-}
-.three {
-  background-image: url(../images/icons/icon-flask.svg);
-  background-color: var(--yellow-color);
-}
-.four {
-  background-image: url(../images/icons/icon-plane.svg);
-  background-color: var(--blue-color);
 }
 .partner-name {
   margin: 0;
