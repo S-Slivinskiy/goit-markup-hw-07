@@ -161,20 +161,37 @@
   display: block;
 }
 .card-photo {
-  position: relative;
   overflow: hidden;
   position: relative;
 }
 .icon {
-  height: 35px;
-  width: 35px;
-  border-radius: 50px;
-  border: 3px solid #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  border: 3px solid var(--light-text);
   position: absolute;
-  background-color: var(--green-color);
   bottom: 0;
   right: 0;
+  fill: var(--light-text);
 }
+.one {
+  background-color: var(--red-color);
+}
+.two {
+  background-color: var(--green-color);
+}
+.three {
+  background-color: var(--yellow-color);
+}
+.four {
+  background-color: var(--blue-color);
+}
+
+.partner-link:hover .icon,
+.partner-link:focus .icon {
+  transform: scale(1.05);
+}
+
 .partner-name {
   margin: 0;
   margin-top: 20px;
