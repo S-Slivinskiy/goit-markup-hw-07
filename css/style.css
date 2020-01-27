@@ -186,12 +186,10 @@
 .four {
   background-color: var(--blue-color);
 }
-
 .partner-link:hover .icon,
 .partner-link:focus .icon {
   transform: scale(1.05);
 }
-
 .partner-name {
   margin: 0;
   margin-top: 20px;
